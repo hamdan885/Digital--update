@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Amilo Village</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Firebase CDN -->
+  <script type="module" src="js/auth.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Amilo Village Login</h2>
+
+    <input type="text" id="phone" placeholder="+91XXXXXXXXXX">
+
+    <div id="recaptcha-container"></div>
+
+    <button onclick="sendOTP()">Send OTP</button>
+
+    <input type="text" id="otp" placeholder="Enter OTP">
+
+    <button onclick="verifyOTP()">Verify OTP</button>
+
+    <hr style="margin:20px 0;">
+
+    <button onclick="googleLogin()">Login with Gmail</button>
+  </div>
+</body>
+</html>
